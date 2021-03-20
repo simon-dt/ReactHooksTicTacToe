@@ -4,7 +4,7 @@ import "./index.css";
 
 function Square({ onClick, value }) {
   return (
-    <button className="square" onClick={onClick}>
+    <button className={`square value-${value}`} onClick={onClick}>
       {value}
     </button>
   );
