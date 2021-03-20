@@ -102,10 +102,6 @@ function Game({ size }) {
       }
     }
 
-    if (stepNumber === Math.pow(size, 2) - 1) {
-      console.log("Draw")
-    }
-
     setHistory(historyAtStep.concat([{ squares: sq }]));
     setXIsNext(!xIsNext);
     setStepNumber(historyAtStep.length);
